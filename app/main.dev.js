@@ -14,6 +14,14 @@ import { app, BrowserWindow } from 'electron';
 import { autoUpdater } from 'electron-updater';
 import log from 'electron-log';
 import MenuBuilder from './menu';
+import  express  from 'express';
+import { userDB } from './constants/dbconfig';
+const serve = express();
+userDB.defaults({ 
+  user: {},
+  loginCount: 0
+});
+
 
 export default class AppUpdater {
   constructor() {
@@ -100,3 +108,4 @@ app.on('ready', async () => {
   // eslint-disable-next-line
   new AppUpdater();
 });
+serve.listen(3000, () => console.log('connected'));

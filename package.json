@@ -258,14 +258,18 @@
     "@fortawesome/fontawesome-free": "^5.5.0",
     "@pusher/chatkit": "^0.7.18",
     "axios": "^0.18.0",
+    "bcryptjs": "^2.4.3",
     "body-parser": "^1.18.3",
+    "bootstrap": "^4.3.1",
     "cors": "^2.8.5",
     "devtron": "^1.4.0",
     "electron-debug": "^2.0.0",
     "electron-log": "^2.2.17",
     "electron-updater": "^3.2.3",
     "express": "^4.16.4",
-    "history": "^4.7.2",
+    "history": "^4.9.0",
+    "joi": "^14.3.1",
+    "lowdb": "^1.0.0",
     "pusher-chatkit-server": "^0.12.0",
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
@@ -285,5 +289,10 @@
   "collective": {
     "url": "https://opencollective.com/electron-react-boilerplate-594"
   },
-  "browserslist": "electron 1.6"
+  "browserslist": "electron 1.6",
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged --no-verify"
+    }
+  }
 }
