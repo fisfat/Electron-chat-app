@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Login = () => {
+const Signup = () => {
     return (
         <div className="container h-100 top">
             <div className="d-flex justify-content-center h-100">
@@ -16,13 +16,25 @@ const Login = () => {
                                 <div className="input-group-append">
                                     <span className="input-group-text"><i className="fas fa-user"></i></span>
                                 </div>
-                                <input type="text" name="" className="form-control input_user" placeholder="username" />
+                                <input type="text" name="username" className="form-control input_user" placeholder="username" />
+                            </div>
+                            <div className="input-group mb-3">
+                                <div className="input-group-append">
+                                    <span className="input-group-text"><i className="fas fa-envelope"></i></span>
+                                </div>
+                                <input type="email" name="email" className="form-control input_user" placeholder="username" />
                             </div>
                             <div className="input-group mb-2">
                                 <div className="input-group-append">
                                     <span className="input-group-text"><i className="fas fa-key"></i></span>
                                 </div>
                                 <input type="password" name="" className="form-control input_pass" placeholder="password" />
+                            </div>
+                            <div className="input-group mb-2">
+                                <div className="input-group-append">
+                                    <span className="input-group-text"><i className="fas fa-key"></i></span>
+                                </div>
+                                <input type="confirm_password" name="confirm_password" className="form-control input_pass" placeholder="password" />
                             </div>
                             <div className="form-group">
                                 <div className="custom-control custom-checkbox">
@@ -33,7 +45,7 @@ const Login = () => {
                         </form>
                     </div>
                     <div className="d-flex justify-content-center mt-3 login_container">
-                        <button type="button" name="button" className="btn login_btn">Login</button>
+                        <button type="button" name="button" className="btn login_btn">Signup</button>
                     </div>
                     <div className="mt-4">
                         <div className="d-flex justify-content-center links">
@@ -49,4 +61,4 @@ const Login = () => {
     );
 }
 
-export default Login
+export default Signup

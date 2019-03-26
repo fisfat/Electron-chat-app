@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import routes from '../constants/routes';
 import styles from './Home.css';
 import Login from './Login';
+import Signup from './Signup';
 
 type Props = {};
 
@@ -16,7 +17,7 @@ export default class Home extends Component<Props> {
       //   <h2>Home</h2>
       //   <Link to={routes.COUNTER}>to Counter</Link>
       // </div>
-      <Login />
+      <Signup />
     );
   }
 }
